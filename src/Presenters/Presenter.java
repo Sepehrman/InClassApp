@@ -18,8 +18,7 @@ public class Presenter {
 
 
     public Presenter(ActivityMain view){
-        Repository repository = new Repository();
-        this.repository = repository;
+        this.repository = Repository.getInstance();
         this.activity = view;
     }
 
